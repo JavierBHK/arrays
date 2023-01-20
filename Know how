@@ -1,0 +1,37 @@
+/*Que es un array? estrucutra de datos que nos permite almacenar un
+*conjunto de datos del mismo tipo. El tamaño se declara al comienzo y
+*no se puede cambiar durante la ejecución del programa
+*
+*array unidimensional - la sentencia sería:
+* tipo_de_variable[] nombre_del_array = new tipo_de_variable[dimension]
+*
+*ejemplos:
+*int[]edad0new int[4];
+*long[]edad=new long[4];
+*float[]=new float[3];
+*double[]=new double[3];
+*boolean[]estado=new boolean[5];
+*char[]sexo=new char[2];
+*String[]nombre=new String[2];
+*/
+
+package com.mycompany.arrays;
+
+public class Arrays {
+
+    public static void main(String[] args) {
+        int[] numeros = new int[3];//iniciamos nuestra variables
+        
+        numeros[0] = 7;
+        numeros[1] = 10;
+        numeros[2] = 13;
+        
+//Las posiciones en arrays siempre van desde 0
+        
+            for(int i=0;i<3;i++){
+                System.out.println(numeros[i]);
+//Si usamos el iterador "i" para imprimir en pantalla, nos imprime todas las
+//posiciones
+            }
+    }
+}
